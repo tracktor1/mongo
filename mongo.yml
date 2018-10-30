@@ -9,9 +9,9 @@
       raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
       changed_when: False
   roles:
-   - base
-   - install
-#  - user
+#   - base
+#   - install
+   - user
 
   tasks: 
 #  - name: Install the latest pymongo package

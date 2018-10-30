@@ -1,0 +1,8 @@
+- name: add the admin user
+  mongodb_user: 
+    database="admin" 
+    name="admin" 
+    password="123456" 
+    login_port=27017 
+    state=present
+  ignore_errors: no
