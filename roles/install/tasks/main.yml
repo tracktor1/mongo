@@ -1,0 +1,15 @@
+- name: Add mongo ppa key
+  become: yes
+  apt_key: keyserver=hkp://keyserver.ubuntu.com:80 id=EA312927
+
+- name: Add mongo sources list
+  become: yes
+  lineinfile: >
+      line="deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse"
+      dest=/etc/apt/sources.list.d/mongodb-org-3.2.list
+      state=present
+      create=yes
+- name: install mongo db
+  become: yes
+  apt: name=mongodb-org update_cache=yes
+   

@@ -1,0 +1,16 @@
+---
+
+- name: Mongo Install Test
+  hosts: localhost
+  become: yes
+
+  tasks:
+  - name: install python-dev
+    become: yes
+    pip:
+      name=pymongo
+
+  
+#  - name: Start MongoDB without access control
+#    mongodb_user: login_user=admin login_password=${mongo_admin_pass} login_port=${mongos_port} database=test user=admin password=${mongo_admin_pass} state=present
+

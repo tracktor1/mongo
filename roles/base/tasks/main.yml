@@ -1,0 +1,14 @@
+- name: Install needed packages
+  apt: name={{ item }} state=installed
+  with_items:
+    - build-essential
+    - python-pip
+    - python3-pip
+  tags:
+    - packages
+- name: Upgrade pip
+  pip: name=pip state=latest
+  tags:
+    - packages
+- name: install pymongo
+  pip: name=pymongo
