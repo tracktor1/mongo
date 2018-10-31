@@ -13,6 +13,4 @@
    - install
    - user
 
-  tasks: 
-#  - name: Install the latest pymongo package
-#    pip: name=pymongo state=latest use_mirrors=no
+#  tasks: 
