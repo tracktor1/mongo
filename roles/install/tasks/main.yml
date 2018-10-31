@@ -14,9 +14,8 @@
   apt: name=mongodb-org update_cache=yes
    
 - copy:
-  src: "{{ role_path }}/files/mongodb.service"
-  dest: /etc/systemd/system/mongodb.service
-
+     src: "{{ role_path }}/files/mongodb.service"
+     dest: /etc/systemd/system/mongodb.service
 - name: Update the systemd service
   raw: systemctl daemon-reload
 
