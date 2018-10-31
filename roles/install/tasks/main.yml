@@ -18,6 +18,5 @@
     dest: /etc/systemd/system/mongodb.service
 - name: Update the systemd service
       raw: systemctl daemon-reload
-
 - name: Update the systemd service
       raw: systemctl start mongodb
