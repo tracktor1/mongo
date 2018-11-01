@@ -1,23 +1,13 @@
 import argparse
 
-
 parser = argparse.ArgumentParser()
-parser.add_argument("default", default="no_arg")
-parser.add_argument("user", help='create user only', default="no_arg")
 
-#parser.add_argument("user", action="store_true")
+parser.add_argument("-u", "--user", help='create user only', default="no_arg")
 args = parser.parse_args()
-#if args.user == True:
-#	print("Deep Shit")
-#elif args.user == user:
-#	print(args.user)
-#    args.user = "run all"
-
-#parser.add_argument("user", nargs='?', default="no_arg")
 
 if args.user == "no_arg":
     print ("I can tell that no argument was given and I can deal with that here.")
-elif args.user == 'magic.name':
+elif args.user == 'user':
     print ("You nailed it!")
 else:
-    print (args.user)
+    print ("Wrong Parameter, only option is -u user")
