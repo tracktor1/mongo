@@ -1,7 +1,7 @@
 import argparse
 
 
-parser = argparse.ArgumentParser(argument_default=shit)
+parser = argparse.ArgumentParser()
 parser.add_argument("user", action="store_true")
 args = parser.parse_args()
 #if args.user == "True"
