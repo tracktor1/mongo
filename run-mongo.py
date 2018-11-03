@@ -9,9 +9,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-u", "--user", help='create user only', default="no_arg")
 args = parser.parse_args()
 
-playbook_path = './mongo.yml'
 
 if args.user == "no_arg":
+    playbook_path = './mongo.yml'
     if not os.path.exists(playbook_path):
     print ('[INFO] The playbook does not exist in path', playbook_path)
     sys.exit()
