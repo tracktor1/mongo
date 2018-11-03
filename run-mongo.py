@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import os
 import argparse
 from ansible.parsing.dataloader import DataLoader
 from ansible.vars import VariableManager
