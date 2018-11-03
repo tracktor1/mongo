@@ -15,7 +15,7 @@ if args.user == "no_arg":
     #if not os.path.exists(playbook_path):
     #    print ('[INFO] The playbook does not exist in path', playbook_path)
     #    sys.exit()
-	print (playbook_path)
+    print (playbook_path)
     subprocess.call(["ansible-playbook", "-K", "playbook_path"])
 elif args.user == 'user':
     print ("You nailed it!")
