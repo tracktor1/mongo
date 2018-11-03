@@ -16,7 +16,7 @@ if args.user == "no_arg":
         print ('[INFO] The playbook does not exist in path', playbook_path)
         sys.exit()
 
-	subprocess.call(["ansible-playbook", "-K", "./mongo.yml"])
+	subprocess.call(["ansible-playbook", "-K", "playbook_path"])
 elif args.user == 'user':
     print ("You nailed it!")
 else:
