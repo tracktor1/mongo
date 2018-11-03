@@ -13,6 +13,6 @@ args = parser.parse_args()
 if args.user == "no_arg":
     subprocess.call(["ansible-playbook", "-K", "./mongo.yml"])
 elif args.user == 'user':
-    subprocess.call(["ansible-playbook", "-K", "./mongo.yml",  "--tags "user""])
+    subprocess.call(["ansible-playbook", "-K", "./mongo.yml",  "--tags", "user"])
 else:
     print ("Wrong Parameter, only option is -u user")
