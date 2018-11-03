@@ -10,7 +10,7 @@ import ansible
 #from ansible.executor.playbook_executor import PlaybookExecutor
 
 
-playbook_path = './mongo.yml'
+playbook_path = './mongo1.yml'
 
 if not os.path.exists(playbook_path):
     print '[INFO] The playbook does not exist'
