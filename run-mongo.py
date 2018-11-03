@@ -1,5 +1,11 @@
 #!/usr/bin/env python
 import argparse
+from ansible.parsing.dataloader import DataLoader
+from ansible.vars import VariableManager
+from ansible.inventory import Inventory
+from ansible.playbook.play import Play
+from ansible.executor.playbook_executor import PlaybookExecutor
+
 
 parser = argparse.ArgumentParser()
 
