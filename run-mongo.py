@@ -11,7 +11,6 @@ args = parser.parse_args()
 
 
 if args.user == "no_arg":
-    print (playbook_path)
     subprocess.call(["ansible-playbook", "-K", "./mongo.yml"])
 elif args.user == 'user':
     print ("Only user will be installed")
