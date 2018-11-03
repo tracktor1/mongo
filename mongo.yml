@@ -9,8 +9,8 @@
       raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
       changed_when: False
   roles:
-   - base
-   - install
-   - user
+   - { role: base, tags: [ 'base' ] }
+   - { role: install, tags: [ 'install' ] }
+   - { role: user, tags: [ 'user' ] }
 
 #  tasks: 
