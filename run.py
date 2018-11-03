@@ -19,5 +19,5 @@ if not os.path.exists(playbook_path):
     sys.exit()
 
 	
-#subprocess.call("ansible-playbook -K ./mongo.yml")
-subprocess.call(["ping", "-c 2", "8.8.8.8"])
+subprocess.call(["ansible-playbook", "-K", "./mongo.yml"])
+#subprocess.call(["ping", "-c 2", "8.8.8.8"])
