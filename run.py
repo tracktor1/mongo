@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 import os
 import sys
+import subprocess
 import argparse
-import ansible
 
+#import ansible
 #from collections import namedtuple
 #from ansible.parsing.dataloader import DataLoader
 #from ansible.vars import VariableManager
@@ -12,8 +13,9 @@ import ansible
 #from ansible.executor.playbook_executor import PlaybookExecutor
 
 
-playbook_path = './mongo1.yml'
+playbook_path = './mongo.yml'
 
 if not os.path.exists(playbook_path):
     print ('[INFO] The playbook does not exist in path', playbook_path)
     sys.exit()
+
