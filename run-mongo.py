@@ -11,13 +11,9 @@ args = parser.parse_args()
 
 
 if args.user == "no_arg":
-    playbook_path = '../mongo.yml'
-    #if not os.path.exists(playbook_path):
-    #    print ('[INFO] The playbook does not exist in path', playbook_path)
-    #    sys.exit()
     print (playbook_path)
     subprocess.call(["ansible-playbook", "-K", "./mongo.yml"])
 elif args.user == 'user':
-    print ("You nailed it!")
+    print ("Only user will be installed")
 else:
     print ("Wrong Parameter, only option is -u user")
