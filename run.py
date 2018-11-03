@@ -15,5 +15,5 @@ import ansible
 playbook_path = './mongo1.yml'
 
 if not os.path.exists(playbook_path):
-    print '[INFO] The playbook does not exist'
+    print ('[INFO] The playbook does not exist in path', playbook_path)
     sys.exit()
