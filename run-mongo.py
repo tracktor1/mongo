@@ -6,7 +6,7 @@ import argparse
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-u", help='create user only', default="no_arg")
+parser.add_argument("-u", "--user", help='create user only', default="no_arg")
 args = parser.parse_args()
 
 
